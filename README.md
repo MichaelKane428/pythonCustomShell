@@ -25,3 +25,5 @@ https://docs.python.org/3/library/subprocess.html
 https://github.com/python-cmd2/cmd2/blob/master/cmd2.py
 
 https://docs.python.org/3/library/getpass.html
+
+https://stackoverflow.com/questions/927866/how-to-get-the-owner-and-group-of-a-folder-with-python-on-a-linux-machine
