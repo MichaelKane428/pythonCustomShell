@@ -23,3 +23,5 @@ https://media.readthedocs.org/pdf/cmd2/latest/cmd2.pdf
 https://docs.python.org/3/library/subprocess.html
 
 https://github.com/python-cmd2/cmd2/blob/master/cmd2.py
+
+https://docs.python.org/3/library/getpass.html
