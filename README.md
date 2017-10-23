@@ -27,3 +27,5 @@ https://github.com/python-cmd2/cmd2/blob/master/cmd2.py
 https://docs.python.org/3/library/getpass.html
 
 https://stackoverflow.com/questions/927866/how-to-get-the-owner-and-group-of-a-folder-with-python-on-a-linux-machine
+
+https://www.linuxquestions.org/questions/linux-server-73/why-bash-ifconfig-command-not-found-when-typing-%24ifconfig-687928/
