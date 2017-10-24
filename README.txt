@@ -22,7 +22,9 @@ Setup:
 1. As a root user (su -) enter the following commands.
 2. Install python    - sudo apt-get install python3 .
 3. Install pip       - sudo apt-get install python-pip .
-4. Install net-tools - sudo apt-get install net-tools .
+4. Install cmd2      - sudo pip install cmd2 .
+5. Install net-tools - sudo apt-get install net-tools .
+
 
 NOTE - If you have issues connecting to gb.archive.ubuntu.com I found my fix at this site.
 https://askubuntu.com/questions/892569/apt-get-update-not-working-in-ubuntu-16-04
