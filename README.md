@@ -1,6 +1,9 @@
 # pythonCustomShell
 System integration assignment
 
+Michael Kane DT211C C14402048
+https://github.com/MichaelKane428/pythonCustomShell
+
 Introduction:
 The purpose of this program is to create a custom shell, which will limit a users ability to input shell commands.
 The user will be restricted to six commands. These are:
@@ -78,7 +81,6 @@ Step-by-Step Guide to the creating of the shell:
 	To complete this task I created a python datetime object. I then took the output of the object and split it on a period.
 	The reason for this was that the numbers after the period represent miliseconds and I did not need them for the program.
 	Next I used re.sub to replace -,: and whitespace with nothing so the strings would be concatinated together.
-9. def do_ut
 	
 References:
 
@@ -115,5 +117,8 @@ stackoverflow.com. (2017). How to get the owner and group of a folder with Pytho
 [online] Available at: https://stackoverflow.com/questions/927866/how-to-get-the-owner-and-group-of-a-folder-with-python-on-a-linux-machine [Accessed 24 Oct. 2017].
 
 [9]
-linuxquestions.org. (2017). Console built with Cmd object Python recipes ActiveState Code. 
+linuxquestions.org. (2017). Why "-bash: ifconfig : command not found" when typing "$ifconfig" 
 [online] Available at: https://www.linuxquestions.org/questions/linux-server-73/why-bash-ifconfig-command-not-found-when-typing-%24ifconfig-687928/ [Accessed 24 Oct. 2017].
+
+stackoverflow.com. (2017). Python: How to get group ids of one username (like id -Gn )
+[online] Available at: https://stackoverflow.com/questions/9323834/python-how-to-get-group-ids-of-one-username-like-id-gn [Accessed 24 Oct. 2017].
