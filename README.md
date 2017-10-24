@@ -2,13 +2,24 @@
 System integration assignment
 
 Introduction:
+The purpose of this program is to create a custom shell, which will limit a users ability to input shell commands.
+The user will be restricted to six commands. These are:
+
+1. pw: The purpose of this command is to display the user current working directory and ignore any tail commands.
+2. ifc: The default functionality of this command is to display the eth0 adapter. A user can enter in any adapter they like as a tail,
+and this command will display the entered adapter instead of the default one.
+3. dt: Display the current date/time in the form year+month+day+hour+minute+second
+4. ud: Display the userId, groupId, username, groupnames and inode of working directory in this order.
+5. help: Display information about the commands available to the user
+6. shell: User is prevented from using this command or its shortcut ! as it allows the user to bypass the shell in python cmd2.
+7. exit: Exits the shell.
 
 Setup:
 //Installing nessesary packages.
-As a root user (su -) enter the following commands.
-Install python    - sudo apt-get install python3 .
-Install pip       - sudo apt-get install python-pip .
-Install net-tools - sudo apt-get install net-tools .
+1. As a root user (su -) enter the following commands.
+2. Install python    - sudo apt-get install python3 .
+3. Install pip       - sudo apt-get install python-pip .
+4. Install net-tools - sudo apt-get install net-tools .
 
 NOTE - If you have issues connecting to gb.archive.ubuntu.com I found my fix at this site.
 https://askubuntu.com/questions/892569/apt-get-update-not-working-in-ubuntu-16-04
@@ -50,8 +61,25 @@ Step-by-Step Guide to the creating of the shell:
 		myShell.cmdloop()
 3. The basic import needed to run the shell is: from cmd2 import Cmd as cmd
 4. Create an __init__ method in the class to set the shell prmpt and welcome message.
-
-
+	def __init__(self):
+        cmd.__init__(self)
+		self.prompt = "=>> "
+        self.intro = "Welcome to the shell. To view the help screen type help."
+5. Create the functions.
+	def functionName(self)
+6. def do_pw
+	NOTE! creating a function name with do_ means the shell will run this as a command and also overwrite an existing command.
+	for this function I called the linux command pwd using subprocess.call. 
+	To prevent the tail being used I just didint include it in the command execution.
+7. def	do_ifc
+	The tricky part about this one was that I couldnt just call ifconfig. I had to put in the path /sbin/ifconfig.
+	Im not fully sure why it didint work as intended, as my root and normal login account could use it without /sbin at the begining.
+8. def do_dt
+	To complete this task I created a python datetime object. I then took the output of the object and split it on a period.
+	The reason for this was that the numbers after the period represent miliseconds and I did not need them for the program.
+	Next I used re.sub to replace -,: and whitespace with nothing so the strings would be concatinated together.
+9. def do_ut
+	
 References:
 
 [1]
